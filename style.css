@@ -3,7 +3,7 @@
 body {
   text-align: center;
   background-color: red; /* For browsers that do not support gradients */
-  background-image: linear-gradient(to bottom right, #32012f, #d400ff);
+  background-image: linear-gradient(to bottom right, #000000, #720089);
   height: 100vh;
   width: 100vw;
   font-family: "Roboto Mono", monospace;
