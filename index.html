@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>typing test</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <p class="para" id="para">
+    </p>
+    <input type="text" id="myInput" oninput="myFunction(this)" autofocus>
+    <div class="time" id="timer-Box">
+        00s
+    </div>
+    <input type="button" value="Re-Start" onClick="window.location.reload()" id="Restart">
+    <div id="keyboard">
+    </div>
+    <div class="resultBox" id="resultBox">
+        <div class="resultContntant">
+            <p class="result" id="wpm"> </p>
+            <p class="result" id="accuracy"> </p>
+            <p class="result" id="Result-correct"> </p>
+            <p class="result" id="Result-wrong"> </p>
+            <input type="button" value="Re-Start" onClick="window.location.reload()" id="Restart">
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>

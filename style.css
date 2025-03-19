@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+
+body {
+  text-align: center;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: linear-gradient(to bottom right, #32012f, #d400ff);
+  height: 100vh;
+  width: 100vw;
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.active {
+  background-color: rgba(0, 136, 255, 0.582);
+}
+.right {
+  color: green;
+}
+.wrong {
+  color: red;
+}
+
+.para {
+  width: 60%;
+  font-size: large;
+  border-radius: 5px;
+  padding: 50px;
+  margin: 30px auto 70px auto;
+  color: #e2dfd0;
+}
+
+#myInput {
+  font-size: large;
+  border-radius: 5px;
+  color: #000000;
+  outline: none;
+  background-color: #e2dfd0;
+  border: none;
+  margin: 30px;
+  height: 30px;
+  width: 400px;
+  text-align: right;
+  padding: 0px 10px;
+}
+
+.keyboardKeys {
+  border: none;
+  width: 40px;
+  height: 40px;
+  margin: 10px;
+  background-color: #fffdf2;
+  color: #f97300;
+  font-style: normal;
+  outline: none;
+  border-radius: 5px;
+  box-shadow: 0px 5px 0px 0px rgb(111, 111, 111);
+}
+#keyboard {
+  width: 50%;
+  margin: 70px auto;
+  text-align: center;
+  border: 1px solid rgba(238, 238, 238, 0.145);
+  border-radius: 10px;
+}
+#Backspace {
+  width: 84px;
+}
+#Tab,
+#Backslash {
+  width: 61px;
+}
+#CapsLock {
+  width: 77px;
+}
+#Enter {
+  width: 106px;
+}
+#ShiftLeft,
+#ShiftRight {
+  width: 122px;
+}
+#Space {
+  width: 310px;
+}
+.animate {
+  animation: shadow 0.2s linear forwards;
+  background-color: #a2a094;
+  box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.718);
+  transform: translateY(2px);
+}
+
+@keyframes shadow {
+  from {
+    box-shadow: none;
+  }
+  to {
+    background-color: #a2a094;
+    box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.718);
+    transform: translateY(2px);
+  }
+}
+
+.time {
+  font-size: large;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  margin-right: 30px;
+  padding: 6px;
+  background-color: rgb(27, 134, 228);
+  display: inline-block;
+  color: white;
+  width: 40px;
+}
+#Restart {
+  font-size: large;
+  border-radius: 5px;
+  padding: 1.5px;
+  padding: 6px;
+  background-color: rgb(0, 141, 21);
+  display: inline;
+  color: white;
+}
+
+.resultBox {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 50%;
+  -ms-transform: translate(-50%, 0%);
+  transform: translate(-50%, 0%);
+  top: 0%;
+  background-color: rgba(255, 255, 255, 0);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  visibility: hidden;
+}
+@keyframes blur {
+  from {
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
+  to {
+    backdrop-filter: blur(12.5px);
+    -webkit-backdrop-filter: blur(12.5px);
+  }
+}
+.resultBox .resultContntant {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 500px;
+  height: 500px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 10px;
+}
+.resultBox .resultContntant p {
+  color: #f95700;
+  font-size: x-large;
+}
